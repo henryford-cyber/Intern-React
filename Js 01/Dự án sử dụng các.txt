@@ -1,0 +1,6 @@
+Dự án sử dụng các thư viện và ngôn ngử  sau :
+1. Ngôn ngữ :Javascript
+2. Framework:React js
+3. Thư viện 
+	- Ant Design 5.0
+	- 

@@ -1,0 +1,803 @@
+ 
+    body{ 
+        // overflow: hidden;
+        font-family: 'Mulish', sans-serif;
+        #Header{
+            .modal-top{
+                position: relative;
+                .modal-overlay{
+                display: none; 
+                }
+                .active {
+                        position: fixed;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        background-color: rgba(0, 0, 0, 0.2);
+                        display: block;
+                        z-index: 1; 
+                }
+                .modal-content { 
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 340px; 
+                    margin: 0;
+                    transform: translateX(100%);
+                    transition: all 1.5s; 
+                    .content{
+                        width: 100%; 
+                        height: 100%;
+                        background-color: #fff;
+                        border-radius:5px;
+                        color: #3c3c3c;
+                        font-size: 13px;
+                        padding:30px;
+                        justify-content: space-between;
+                        display: flex;
+                        flex-direction:column; 
+                        
+                        .button-close-modal {
+                            display: flex;
+                            justify-content: end;
+                            i{
+                                font-size:25px; 
+                            }
+                        } 
+                        .utiliti{
+                            p{
+                                font-size:16px;
+                                font-weight: 700;
+                                margin-bottom: 16px;
+                            }
+                            ul{
+                                li{
+                                    padding: 8px;
+                                    width: 100%;
+                                    a{
+                                        cursor: pointer;
+                                        font-size: 14px;
+                                        line-height: 21px;
+                                        color: #393939;
+                                        font-weight: 600;
+                                        text-align: left;
+
+                                    }
+                                }:hover{
+                                    background: rgba(20,100,244,.1);
+                                    border-radius: 3px;
+                                }
+                            }
+                        }
+                    }
+                
+                }
+                .actived {
+                    transform: translate(0);
+                    transition: all 0.4s;
+                    z-index: 11111111;
+                }
+            } 
+            
+            .header-top-content{
+                .header-nav-main{
+                    .nav-main{
+                        .nav-main-child{
+                            li {
+                                a{
+                                    h2{
+
+                                    }
+                                    :hover{
+                                        color: #1464f4;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .header-card{ 
+                        .open-modal{
+                            display: flex;
+                        }
+                    }
+                }
+            }
+            .video-main{
+                .header-slide-main{
+                    .slick-next {
+                        right: 15px; 
+                        z-index: 1; 
+                        margin-right: 80px;
+                    }
+                    .slick-prev {
+                        left: 15px;
+                        z-index: 1;
+                        margin-left: 30px;
+                    }
+                    .slick-prev:before{
+                        display: none;
+                    }
+                    .slick-next:before{
+                        display: none;
+                    }
+                    .slick-arrow{ 
+                        
+                    .fas{
+                        font-size: 60px;
+                        color: #fff;
+                        padding: 6px 25px;
+                        border-radius: 5px;
+                        background-color: #ffffff73;
+                    } 
+                    } 
+                    
+                    
+                
+                }
+            }
+        }
+        #Content {
+            // overflow: hidden;
+            // height: 100%; 
+            .shop-product{
+                background-color:#f7f9f9 ;
+                .tab-content{
+                    display: none;
+                }
+                .active{
+                    display: block;
+                }
+                .tab-nav-bike{
+                    flex-wrap: wrap;
+                    font-size:13px;
+                    justify-content:center;
+                    line-height:19.5px;
+                    padding:0px 0px 40px;
+                    text-align:left;
+                    .tab-nav-center{
+                        gap:50px;
+                        li{
+                            .tab-links{
+                                align-items:center;
+                                border-radius:4px;
+                                color:#3c3c3c;
+                                display:flex;
+                                font-family:mulish;
+                                font-size:12px;
+                                font-weight:700;
+                                justify-content:space-between;
+                                letter-spacing:1.2px;
+                                cursor: pointer;
+                            }
+                            .active{
+                                color:#1464f4;
+                                font-weight:700;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                .slider-auto{ 
+                    .slider-list-auto{ 
+                        padding-left: 30px;
+                        .slider-item{
+                            margin-right: 30px; 
+                            .card-product{
+                                padding: 24px;
+                                background-color:white;
+                                .images-product{
+                                    margin: 5px 6px;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    
+                                    img{ 
+                                    margin:0 auto;
+                                        
+                                    }
+                                }
+                                .product-info{
+                                    font-size:13px;
+                                    line-height:19.5px;
+                                    text-align:left;
+                                    .parameter{
+                                        margin: 0 0 30px;
+                                        justify-content: space-between;
+                                        .prameter-item{
+                                        .info{
+                                            color:#3c3c3c;
+                                            display:inline;
+                                            font-size:12px;
+                                            font-weight:600;
+                                            line-height:18px;
+                                            margin:0px 0px 8px;
+    
+                                        }
+                                        .result{
+                                            color:#3c3c3c;
+                                            font-size:20px;
+                                            font-weight:300;
+                                            line-height:25.1px;
+                                            
+                                        }
+                                            
+                                        }
+                                    }
+                                    .product-name{
+                                        color:#313131;
+                                        font-size:40px;
+                                        font-weight:300;
+                                        letter-spacing: -0.96px;
+                                        line-height:60.24px;
+                                        margin:0px 0px 8px;
+                                        text-align:left;
+                                    }
+                                    .title-c{
+                                        color:#92a0b2;
+                                        font-size:18px;
+                                        font-weight:600;
+                                        line-height:25px;
+                                        margin:0px 0px 30px;
+                                        text-align:left;
+                                    }
+                                    .price{
+                                        .price-item{
+                                            color:#3c3c3c;
+                                            font-size:18px;
+                                            font-weight:600;
+                                            line-height:25px;
+                                            margin:0px 0px 30px;
+                                            text-align:left;
+                                        }
+                                    }
+                                    .button-link{ 
+                                        flex-wrap:wrap;
+                                        font-size:13px;
+                                        justify-content:space-between;
+                                        line-height:19.5px;
+                                        text-align:left; 
+                                        a{
+                                        width: 49%; 
+                                        }
+                                    }
+                                
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            .blog-info{
+                padding-top: 30px;
+                background-color: #fff;
+            .title-battery{
+                    display:flex;
+                    justify-content:center;
+                    margin-bottom:40px;
+                    .title-top{
+                        
+                        .title{
+                            text-align: center;
+                            font-weight: 300;
+                            font-size: 56px;
+                            line-height: 1.25;
+                            text-align: center;
+                            letter-spacing: -.02em;
+                            color: #3c3c3c;
+                            margin-bottom: 14px;
+                        }
+                        p{
+                            margin: 0 auto;
+                            text-align: center;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 150%;
+                            text-align: center;
+                            color: #3c3c3c;
+                            max-width: 63%;
+                        }
+                    }
+            }  
+            .list-blog{
+                display: flex; 
+                justify-content: space-between;
+                padding: 0 30px; 
+                gap: 30px;
+                .blog-items{ 
+                    .car-and-battery{ 
+                        padding: 20px 40px;
+                        .title{
+                            text-align: center;
+                            font-size: 28px;
+                            font-weight: 300;
+                            letter-spacing: -0.56px;
+                            
+                        }
+                        a{
+                            margin-top:20px
+                        }
+                    }
+                }
+            }
+            }
+            .charger-mobile{
+                background-color: #fff;
+                padding:230px 0px;  
+                .infomation{
+                    padding-top: 100px;
+                    padding-left:160px ;
+                    h2{
+                        padding-bottom: 10px;
+                    }
+                    p{
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+            .warranty-and-service{
+                background-color: #f9fdff;
+                .box-rela{
+                    max-width: 23%;
+                    top: 25%;
+                    left: 10%;
+                    .title-warranty{
+                        .title{
+                            color: #3c3c3c;
+                            font-size:48px;
+                            font-weight: 300;
+                            letter-spacing: -0.96px;
+                            line-height: 60px;
+                            text-align:left;
+
+                        }
+                        p{
+                            color: #3c3c3c;
+                            line-height: 24px;
+                        }
+                    }
+                    .info-warranty{
+                        .title{
+                            color: #3c3c3c;
+                            font-size:24px;
+                            font-weight: 600;
+                            letter-spacing: -0.96px;
+                            line-height: 30px;
+                            text-align:left;
+
+                        }
+                        p{
+                            color: #3c3c3c;
+                            line-height: 24px;
+
+                        }
+                    }
+                    .maintenance{
+                        .title{
+                            color: #3c3c3c;
+                            font-size:24px;
+                            font-weight: 600;
+                            letter-spacing: -0.96px;
+                            line-height: 30px;
+                            text-align:left;
+
+                        }
+                        p{
+                            color: #3c3c3c;
+                            line-height: 24px;
+
+                        }
+                    }
+                }
+                .img-banner{
+                    padding-left: 75px;
+                }
+            }
+        }
+        #Footer { 
+            .footer-body {
+                .company-vf{
+                    .logo{
+                        a{
+                            img{}
+                        }
+                    }
+                    .detail-company{
+                        margin-top: 35px;
+                        .name-company{
+                            color: #3c3c3c;
+                            font-size:18px;
+                            font-weight: 700;
+                            letter-spacing: -0.36px;
+                            text-align: left;
+                            margin-bottom: 16px;
+                        }
+                        .mst{
+                            color: #3c3c3c;
+                            font-size:15px;
+                            font-weight: 600;
+                            margin-bottom: 16px;
+                        } 
+                    }
+                }
+                .menu-vf{
+                    .three-menu{
+                            .main-menu{
+                                li{
+                                    margin-bottom: 20px;
+                                    a{
+                                        color: #3c3c3c;
+                                        font-size:14px;
+                                        font-weight: 700;
+                                        line-height: 21px;
+                                        text-transform:uppercase;
+                                        text-align:left;
+                                    }
+                                }
+                            }
+                            .subscribe-info{
+                                max-width: 450px;
+                                h2{
+                                    color: #3c3c3c;
+                                    font-size:14px;
+                                    font-weight: 700;
+                                    margin-bottom:20px;
+
+                                }
+                                p{
+                                    color: #3c3c3c;
+                                    font-size:14px;
+                                    font-weight: 400;
+                                    margin-bottom:20px;
+                                }
+                                .input-email{
+                                    input{
+                                        width: 100%;
+                                        background-color:#ffffff;
+                                        border-radius:4px;
+                                        color:#495057;
+                                        font-size:12px;
+                                        line-height:16px;
+                                        padding:6px 12px;
+                                        border: none;
+                                        border-radius: 4px;
+                                        height: 50px;
+                                    }
+                                    a{
+                                        left: 71%;
+                                        top: 12%;
+                                    }
+                                }
+                            }
+                    }
+                    .ecosystem{
+                        .eco-list{
+                            .ecos{
+                                li{
+                                    .ecos-item{
+                                        color: #8a8a8a;
+                                        font-size: 12px;
+                                        font-weight:600;
+                                        letter-spacing: -0.24px;
+                                        line-height:18px;
+                                        text-align: left;
+                                        padding-bottom: 5px;
+                                        
+                                    }:hover{
+                                        color: #1464f4;
+                                        border-bottom:solid 1px #1464f4;
+                                    }
+                                    
+                                    .active{
+                                        color: #3c3c3c;
+                                        font-size:14px;
+                                        font-weight: 700;
+                                        line-height: 21px;
+                                        letter-spacing: -0.28px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+    } 
+ 
+@media screen and (max-width: 1920px) {
+   body{
+    #Content {
+        .warranty-and-service{
+            .box-rela{
+                .title-warranty{
+                    margin-bottom:20px;
+                    .title{ 
+                        font-size: 36px;
+                        font-weight: 300;
+                        line-height: 45px;
+                        letter-spacing: -.02em;
+                    }
+                    p{
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+    }
+   }
+
+ } 
+@media screen and (max-width: 1500px) {
+   body{
+    #Content {
+        .warranty-and-service{
+            .box-rela{
+                top: 10%;
+                .title-warranty{
+                    
+                }
+            }
+        }
+    }
+   }
+
+ } 
+@media screen and (max-width: 1260px) {
+   body{
+    #Content {
+        .warranty-and-service{
+            .box-rela{ 
+                 max-width: 40%;
+                 
+            }
+        }
+        .charger-mobile{
+            .images-charger{
+                width: 50%;
+            }
+            .infomation {
+                padding-top: 50px;
+                 padding-left: 30px; 
+            }
+        }
+    }
+   }
+
+ }  
+@media screen and (max-width: 1024px) {
+   body{
+        #Header{
+            .header-top-content{
+                .header-nav-main{
+                    .nav-main{
+                        display: none;
+                    }
+                    .header-card{
+                        gap: 25px;
+                        .box-button{
+                            display: none;
+                        }
+                        .buttton-account{
+                            display:block;
+                        }
+                        .open-modal{
+                            display: block;
+                        
+                            .button-open-modal{
+                                background-color: #bdd8ef8c;
+                                border-radius: 3px;
+                                i{
+                                    color: #3e7bb1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .video-main{
+                .header-slide-main{
+                    .slick-arrow{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+        #Content {
+            .blog-info{
+                .list-blog{
+                    flex-wrap: wrap;
+                }
+            }
+            .charger-mobile {
+                padding: 100px 0px;
+                .infomation { 
+                    padding-right: 30px;
+                }
+            }
+            .warranty-and-service {
+                .box-rela{
+                    position: relative;
+                    max-width: 90%;
+                    text-align: center;
+                    
+                    .title-warranty {
+                        // margin-bottom: 20px;
+                        .title{
+                            text-align: center
+                        }
+                    }
+                    .info-warranty{
+                        // margin-bottom: 20px;
+                        .title{
+                            text-align: center
+                        }
+                    }
+                    .maintenance{
+                        .title{
+                            text-align: center
+                        }
+                    }
+                } 
+               .img-banner {
+                    .img-fist{
+                         display: none;
+                    }
+                }       
+            }
+        }
+   }
+
+ }  
+ @media screen and (max-width: 770px) {
+    body{
+        #Content {
+            .shop-product{
+                .slider-auto{
+                    .slider-list-auto{
+                        .slider-item{
+                           .card-product{
+                                .product-info{
+                                    .button-link{
+                                        a{
+                                            padding:10px 10px;
+                                        }
+                                    }
+                                }
+                           } 
+                        }
+                    }
+                }
+            }
+            .blog-info{
+                .title-battery{
+                    .title-top{
+                        p{
+                            max-width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    body{
+        #Header{
+            .video-main{
+                padding-top: 70px;
+            }
+        }
+        #Content {
+            .shop-product{
+                .slider-auto{
+                    padding: 30px 0;
+                }
+            }
+            .over{
+                overflow: hidden;
+                .tab-nav-bike{
+                    width: 120%;
+
+                    .tab-nav-center{
+                        gap: 20px;
+                        li{
+                            .tab-links{
+
+                            }
+                        }
+                    }
+                }
+            }
+            .charger-mobile{
+                .infomation{
+                    padding:0;
+                }
+                .images-charger{
+                    width: 100%;
+                }
+            }
+          .warranty-and-service{
+            .img-banner{
+                padding:0; 
+               .img-last {
+                    display: block;
+                    width: 100%;
+               }
+            } 
+          } 
+        }
+    }
+}
+@media screen and (max-width: 415px) {
+    body{
+        #Header{
+            .video-main{
+                padding-top: 70px;
+            }
+        }
+        #Content {
+            .shop-product{
+                .slider-auto{
+                    padding: 20px 0;
+                }
+            }
+            .over{
+                padding-bottom: 50px;
+                overflow: hidden;
+                .tab-nav-bike{
+                    width: 120%;
+                    padding: 0;
+                    .tab-nav-center{
+                        gap: 10px;
+                        padding: 0 30px;
+                        li{
+                            
+                        }
+                    }
+                }
+            }
+            .charger-mobile{
+                flex-wrap: wrap;
+                .infomation{
+                    width: 90%;
+                    padding:0;
+                    text-align: center;
+                    h2{
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+                .images-charger{
+                    width: 80%;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .warranty-and-service{
+                .img-banner{
+                    padding:0; 
+                .img-last {
+                        display: block;
+                        width: 100%;
+                }
+                } 
+            } 
+            .blog-info{
+                .title-battery{
+                    .title-top{
+                        .title{
+                            font-size:42px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

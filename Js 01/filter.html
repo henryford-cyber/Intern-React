@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="filter">
+        <h1>Tìm kiếm </h1>
+    </div>
+    <script>
+        console.log("Find in array");
+        let arr = [{
+            name: 'nam',
+            age: 22
+        }, {
+            name: 'anh',
+            age: 42
+        }, {
+            name: 'ly',
+            age: 22
+        }, {
+            name: 'thanh',
+            age: 32
+        }, {
+            name: 'tuan',
+            age: 12
+        }, {
+            name: 'duong',
+            age: 32
+        }, ];
+        let filter = arr.filter((item, index) => {
+            return item && item.age === 22;
+
+        });
+        console.log(filter);
+    </script>
+</body>
+
+</html>

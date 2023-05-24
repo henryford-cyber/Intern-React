@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="button">Ok</button>
+   <table id="root"></table> 
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+<script>
+    var jsonData='[{"rank":"9","content":"alon","UID":"5"},{"rank":"9","content":"alon","UID":"5"},{"rank":"9","content":"alon","UID":"5"}]';
+    $(".button").click(function(){
+        $.ajax({url: "/echo/json",
+            type: 'POST',
+            data:{
+                json:jsonData
+            },
+            success: function (response) {
+            var trHTML = '';
+            $.each(response, function (i, item) {
+            trHTML += `
+            <tr>
+                <td> ${item.rank }</td>
+                <td>  ${item.content} </td>
+                <td> ${item.UID} </td>
+            </tr>`;
+            });
+            $('#root').append(trHTML);
+            }});
+    });
+</script>
+
+</html>
