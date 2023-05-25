@@ -67,11 +67,6 @@ body #Header .modal-top .modal-content .content .utiliti ul :hover {
   background: rgba(20, 100, 244, 0.1);
   border-radius: 3px;
 }
-body #Header .modal-top .actived {
-  transform: translate(0);
-  transition: all 0.4s;
-  z-index: 11111111;
-}
 body #Header .header-top-content .header-nav-main .nav-main .nav-main-child li a :hover {
   color: #1464f4;
 }
@@ -573,5 +568,8 @@ body #Footer .footer-body .menu-vf .ecosystem .eco-list .ecos li .active {
   }
   body #Content .blog-info .title-battery .title-top .title {
     font-size: 42px;
+  }
+  body #Footer .footer-body .menu-vf .three-menu .subscribe-info .input-email .absolute {
+    left: 56%;
   }
 }/*# sourceMappingURL=style.css.map */

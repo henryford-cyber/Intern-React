@@ -3,7 +3,7 @@ $(document).ready(function () {
   $(".header-slide-main").slick({
     dots: false,
     infinite: false,
-    lazyLoad: 'ondemand',
+    lazyLoad: 'ondemand', 
     slidesToShow: 1,  
     prevArrow: "<div class='slick-prev slick-arrow'><i class='fas fa-caret-left'></i></div>",
     nextArrow: "<div class='slick-next slick-arrow'><i class='fas fa-caret-right'></i></div>"
@@ -124,13 +124,18 @@ $(document).ready(function () {
 
 $(".button-open-modal").click((e) => {
   e.preventDefault();
-  $(".modal-overlay").addClass("active");
-  $(".modal-content").addClass("actived");
+  $(".modal-overlay").addClass("active"); 
+  $(".modal-content").css("transform", "translateX(0)");
+  $(".modal-content").css("transition", "all 1.0 ease-in-out");
+  $(".modal-content").css("z-index", "100123");
+
 });
 $(".button-close-modal").click((e) => {
   e.preventDefault();
   $(".modal-overlay").removeClass("active");
-  $(".modal-content").removeClass("actived");
+  $(".modal-content").css("transform", "translateX(100%)");
+ 
+  // $(".modal-content").removeClass("actived");
 });
 
  
@@ -188,4 +193,32 @@ $(".button-close-modal").click((e) => {
 //   $("#Content").css("transition", "all"+" 2.0s"); // Áp dụng thuộc tính "transform" cho phần tử "body"
 // });
 
- 
+// kỹ thuật lazy loading
+
+// data-src
+
+// const images = document.querySelectorAll('img[data-src]');
+
+// const options = {
+//   root: null,
+//   rootMargin: '0px',
+//   threshold: 0.1
+// };
+
+// const observer = new IntersectionObserver((entries, observer) => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       const img = entry.target;
+//       const src = img.getAttribute('data-src');
+
+//       img.setAttribute('src', src);
+//       img.removeAttribute('data-src');
+
+//       observer.unobserve(img);
+//     }
+//   });
+// }, options);
+
+// images.forEach(img => {
+//   observer.observe(img);
+// });
