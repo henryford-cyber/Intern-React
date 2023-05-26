@@ -1,0 +1,117 @@
+#content .contact{
+    padding: 32px 27px 45px 27px;
+}
+.container{ 
+    width: 1260px;
+    margin: 0 auto;
+}
+/* .row .column-input{
+    padding: 52px 62px 18px 62px;
+     
+} */
+.column-input .form-contact{
+    padding: 52px 62px 18px 62px;
+    border-radius: 100px;
+    background-color: #7E7979;
+}
+ .form-detail .input-contact {
+    margin-bottom:40px
+}
+ .form-detail .text-area {
+    margin-bottom:30px
+}
+.input-contact input{
+    padding: 20px 24px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;  
+    font-size: 2.0rem;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+ .form-detail .input-contact textarea{
+    padding: 20px 30px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;  
+    font-size: 2.0rem;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 150px;
+} 
+.input-contact  input::placeholder{ 
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+    
+}
+.input-contact textarea::placeholder{ 
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+    
+}
+.form-contact .form-detail .btn-form{ 
+    font-size: 4.0rem;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 4.8rem;
+    letter-spacing: 0em;
+    text-align: left; 
+    border-radius: 10px;
+    display: flex;
+    margin: 0 auto;
+    outline: none;
+    border: none; 
+    padding:20px 45px;
+    background-image: linear-gradient(90deg, #eaeaea 17%, #565663 69%, #ffffff 108%);
+}
+.column-contact .contact-method .method-item{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.contact-method .method-item .phone-detail a {
+    
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    
+}
+.contact-method .method-item .phone-detail h3 { 
+    font-size: 3.2rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left; 
+    color: #fff;
+}
+.column-contact .contact-method{
+    padding: 52px 20px 20px 20px;
+    border-radius: 100px;
+    background-color: #7E7979;
+}
+.method-item .img-icon {
+    max-width: 66px;
+    max-height: 66px;
+}
+.method-item .img-icon img {
+    width: 100%;
+    height: 100%;
+}
